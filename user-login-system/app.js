@@ -8,8 +8,8 @@ var session = require('express-session');
 var passport = require('passport');
 var expressValidator = require('express-validator');
 var LocalStrategy = require('passport-local').Strategy;
-var multer = require('multer');
-var upload = multer({dest: './uploads'});
+
+var bcrypt = require('bcryptjs');
 var flash = require('connect-flash');
 var mongo = require('mongodb');
 var mongoose = require('mongoose');
